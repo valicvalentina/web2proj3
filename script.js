@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Funkcija za crtanje i pomicanje zvijezda
     function crtajZvijezde() {
-        ctx.fillStyle = '#ffffff';
+        ctx.fillStyle = 'white';
 
         // Dodavanje nove zvijezde
         stars.push({ x: Math.random()*canvas.width, 
