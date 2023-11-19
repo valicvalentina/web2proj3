@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    //Prikaživanje vremena
+    //Prikazivanje vremena
     function prikaziVrijeme() {
         ctx.font = '16px Arial';
         ctx.fillStyle = 'white';
