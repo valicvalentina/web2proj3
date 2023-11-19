@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
 
+    // Inicijalne dimenzije canvasa
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -223,7 +224,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = '#000000';
+        ctx.strokeStyle = 'red';
+        ctx.lineWidth = 5; 
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
         crtajZvijezde();
         crtajAsteroide();
@@ -257,6 +261,12 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        ctx.fillStyle = '#000000';
+        ctx.strokeStyle = 'red';
+        ctx.lineWidth = 5; 
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeRect(0, 0, canvas.width, canvas.height);
+      
     });
 
     //Reagira na događaje kada se pritisne određena tipka na tipkovnici. 
