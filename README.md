@@ -1,6 +1,7 @@
 Projekt je razvijen u sklopu kolegija Napredni Razvoj Programske Potpore za Web na Fakultetu elektrotehnike i računarstva.
 
 The project was developed as part of the Advanced Web Software Development course at the Faculty of Electrical Engineering and Computing.
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Izrađena je arkadna 2D računalna igra kao HTML5 web stranica. Igra je znatno pojednostavljena verzija poznate arkadne igre Asteroids.
