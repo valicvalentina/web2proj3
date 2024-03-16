@@ -35,3 +35,30 @@ Igra pamti najbolje (najduže) vrijeme od kad je prvi put pokrenuta. Podatak o n
 Kako pokrenuti i isprobati igru:
 Igra odmah kreće nakon učitavanja stranice, krećemo se strelicama (gore, dolje, lijevo, desno) po ekranu. Tijekom igre generiraju se asteroidi, a 
 cilj igrača je ne sudariti se sa asteroidom. U slučaju sudara igra se restartira te se generira zvuk sudara. 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+An arcade 2D computer game has been created as an HTML5 webpage. The game is a significantly simplified version of the well-known arcade game Asteroids.
+
+The game is displayed within a Canvas object covering the entire web browser window. The Canvas background is black, and it has a visible border. Additionally, there is an animated background with white dots simulating stars moving horizontally at a constant speed.
+
+The game starts after the webpage loads. At the beginning of the game, a certain number of objects (asteroids) are generated at random positions and with random velocity vectors. All generated asteroids are initially outside the screen area and gradually enter the visible Canvas area.
+
+New asteroid objects, their positions, direction, and speed of movement are randomly generated. These parameters are constant. Game parameters - the number of asteroid objects and the frequency of their generation - are predefined (constants in the program code).
+
+The object representing an asteroid is an appropriate image of an asteroid.
+
+The object representing the player is a red-colored rectangle with a 3D shadow around the edge. The player starts the game exactly in the middle of the Canvas.
+
+The player controls their position using the keyboard (arrow keys - up, down, left, right).
+
+If the object representing the player goes beyond the screen borders, it returns from the opposite side.
+
+At each animation step, collision detection (crash) between all objects and the player object is performed, and there is a collision sound.
+
+The game measures the time from the start (from 00:00.000; minutes:seconds.milliseconds) until at least one asteroid object collides with the player object. The goal of the game (i.e., the player's goal) is to achieve the longest collision-free time. In other words, to "survive" as long as possible without an asteroid object hitting the player object.
+
+The game remembers the best (longest) time since it was first launched. The data on the best time is stored in local storage using the HTML5 Web Storage API.
+
+How to run and test the game: The game starts immediately after the page loads; we move using the arrow keys (up, down, left, right) on the screen. During the game, asteroids are generated, and the player's goal is to avoid colliding with them. In case of a collision, the game restarts, and a collision sound is generated.
